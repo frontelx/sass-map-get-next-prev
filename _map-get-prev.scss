@@ -34,54 +34,80 @@
 /// .bar {
 ///   width: auto;
 /// }
-
-@function map-get-prev($map, $key, $fallback: false, $return: value) {
-
+@function map-get-prev($map, $key, $fallback: false, $return: value, $debug: false) {
     // Check if map is valid
     @if type-of($map) == map {
-
+        @if $debug {
+            @debug 'Map exists #{$map}';
+        }
         // Check if key exists in map
         @if map-has-key($map, $key) {
-
+            @if $debug {
+                @debug 'Map has key #{$key}';
+            }
             // Init index counter variable
-            $i: 0;
-
+            $i: 1;
             // Init key index
             $key-index: false;
-
+            $previous-index: false;
             // Traverse map for key
             @each $map-key, $map-value in $map {
-                // Update index
-                $i: $i + 1;
-
+                @if $debug {
+                    @debug 'map-key: #{$map-key}, map-value: #{$map-value}, i: #{$i}';
+                }
                 // If map key found, set key index
                 @if $map-key == $key {
                     $key-index: $i;
-                }
-
-                // If previous index return previous value or key based on $return
-                @if $i == $key-index - 1 {
-                    @if $return == key {
-                        @return $map-key;
-                    } @else {
-                        @return $map-value;
+                    @if $debug {
+                        @debug 'found key-index: #{$key-index}';
                     }
                 }
-
-                // If first entry return false
-                @if $i == 1 {
+                // Update index
+                $i: $i + 1;
+            }
+            // If the key-index exists, iterate through the map again
+            @if $key-index != false {
+                $previous-index: $key-index - 1;
+                $i: 1;
+                // If the previous key is less than one, use the fallback
+                @if $previous-index < 1 {
+                    @warn 'no previous item in map, returning fallback';
                     @return $fallback;
                 }
+                @else {
+                    // Traverse map for key
+                    @each $map-key, $map-value in $map {
+                         @if $i == $previous-index {
+                            @if $return == 'key' {
+                                @if $debug {
+                                    @debug 'found! returning map-key: #{$map-key}';
+                                }
+                                @return $map-key;
+                            }
+                            @else {
+                                @if $debug {
+                                    @debug 'found! returning map-value: #{$map-value}';
+                                }
+                                @return $map-value;
+                            }
+                        }
+                        // Update index
+                        $i: $i + 1;
+                    }
+                }
             }
-
-            @warn 'No previous map item for key #{$key}';
+            @else {
+                @warn 'No previous map item for key #{$key}';
+                @return $fallback;
+            }
+        }
+        @else {
+            @warn 'No valid key #{$key} in map';
             @return $fallback;
         }
-
-        @warn 'No valid key #{$key} in map';
+    }
+    @else {
+        @warn 'No valid map';
         @return $fallback;
     }
-
-    @warn 'No valid map';
-    @return $fallback;
 }
