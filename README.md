@@ -37,6 +37,7 @@ Will generate the following CSS
 * **$map** - Sass list map
 * **$key** - List map key
 * **$fallback** (false) - Fallback value if map, key or next item does not exist
+* **$debug** (false) - Debug option
 
 # map-get-prev
 
