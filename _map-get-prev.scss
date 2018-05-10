@@ -9,8 +9,9 @@
 ///
 /// @param {Map} $map - Sass list map
 /// @param {String} $key - List map key
-/// @param {String} $fallback (false) - Fallback value if map, key or previous item does not exist
+/// @param {Boolean} $fallback (false) - Fallback value if map, key or previous item does not exist
 /// @param {String} $return (value) - Return value or key of previous list item
+/// @param {Boolean} $debug (false) - Debug option
 ///
 /// @example scss - Usage
 /// $map: (
