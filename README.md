@@ -6,7 +6,7 @@ For example when Sass map is used with a `@each` loop.
 * [map-get-next](#map-get-next)
   + [Basic usage](#basic-usage)
     - [CSS output](#css-output)
-  + [Pracical usage](#pracical-usage)
+  + [Practical usage](#practical-usage)
     - [CSS output](#css-output-1)
   + [Parameters](#parameters)
 * [map-get-prev](#map-get-prev)
@@ -48,7 +48,7 @@ $map: (
 }
 ```
 
-### Pracical usage
+### Practical usage
 
 Set min- and max with for all breakpoints in Sass map.
 
