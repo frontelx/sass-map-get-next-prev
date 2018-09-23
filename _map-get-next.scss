@@ -14,26 +14,26 @@
 /// @param {Boolean} $debug (false) - Debug option
 ///
 /// @example scss - Usage
-/// $map: (
-///   a: 100px,
-///   b: 200px
+///$map: (
+///   s: 320px,
+///   m: 768px,
 /// );
 ///
 /// .foo {
-///   width: map-get-next($map, a);
+///   width: map-get-next($map, s);
 /// }
 ///
 /// .bar {
-///    width: map-get-next($map, b, auto);
+///    width: map-get-next($map, m, 1024px);
 /// }
 ///
 /// @example css - CSS output
 /// .foo {
-///   width: 200px;
+///   width: 768px;
 /// }
 ///
 /// .bar {
-///   width: auto;
+///   width: 1024px;
 /// }
 
 @function map-get-next($map, $key, $fallback: false, $return: value) {
