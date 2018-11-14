@@ -1,0 +1,26 @@
+{
+  "name": "sass-map-get-next-prev",
+  "version": "0.0.1",
+  "description": "Sass map-get functions improving loops with get-next and get-prev for a potential 2nd loop parameter",
+  "main": "map-get-functions.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rowild/sass-map-get-next-prev.git"
+  },
+  "keywords": [
+    "Sass",
+    "map-get",
+    "loop",
+    "next",
+    "prev"
+  ],
+  "author": "elche",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/rowild/sass-map-get-next-prev/issues"
+  },
+  "homepage": "https://github.com/rowild/sass-map-get-next-prev#readme"
+}
