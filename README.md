@@ -10,8 +10,10 @@ For usage in node simply use:
 npm install -s https://github.com/elcheio/sass-map-get-next-prev
 ```
 
+## Tutorial on how to use these functions
 - [Sass map-get functions](#sass-map-get-functions)
   - [Installation with npm](#installation-with-npm)
+  - [Tutorial on how to use these functions](#tutorial-on-how-to-use-these-functions)
   - [map-get-next](#map-get-next)
     - [Basic usage](#basic-usage)
       - [CSS output](#css-output)
