@@ -3,7 +3,7 @@
 Enhancement functions map-get-next and map-get-prev.
 For example when Sass map is used with a `@each` loop.
 
-# Installation with npm
+## Installation with npm
 
 For usage in node simply use:
 ```js
@@ -11,7 +11,7 @@ npm install -s https://github.com/elcheio/sass-map-get-next-prev
 ```
 
 - [Sass map-get functions](#sass-map-get-functions)
-- [Installation with npm](#installation-with-npm)
+  - [Installation with npm](#installation-with-npm)
   - [map-get-next](#map-get-next)
     - [Basic usage](#basic-usage)
       - [CSS output](#css-output)
