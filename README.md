@@ -1,22 +1,31 @@
 # Sass map-get functions
 
-Enhancement functions map-get-next and map-get-prev.  
+Enhancement functions map-get-next and map-get-prev.
 For example when Sass map is used with a `@each` loop.
 
-* [map-get-next](#map-get-next)
-  + [Basic usage](#basic-usage)
-    - [CSS output](#css-output)
-  + [Practical usage](#practical-usage)
-    - [CSS output](#css-output-1)
-  + [Parameters](#parameters)
-* [map-get-prev](#map-get-prev)
-  + [Basic usage](#basic-usage-1)
-    - [CSS output](#css-output-2)
-  + [Parameters](#parameters-1)
+# Installation with npm
+
+For usage in node simply use:
+```js
+npm install -s https://github.com/elcheio/sass-map-get-next-prev
+```
+
+- [Sass map-get functions](#sass-map-get-functions)
+- [Installation with npm](#installation-with-npm)
+  - [map-get-next](#map-get-next)
+    - [Basic usage](#basic-usage)
+      - [CSS output](#css-output)
+    - [Practical usage](#practical-usage)
+      - [CSS output](#css-output-1)
+    - [Parameters](#parameters)
+  - [map-get-prev](#map-get-prev)
+    - [Basic usage](#basic-usage-1)
+      - [CSS output](#css-output-2)
+    - [Parameters](#parameters-1)
 
 ## map-get-next
 
-Function to get next map item.  
+Function to get next map item.
 Returns next map item or fallback value if map, key or next item does not exist.
 
 ### Basic usage
@@ -88,7 +97,7 @@ $map: (
 
 Equivalent to map-get-next
 
-Function to get previous map item.  
+Function to get previous map item.
 Returns previous map item or fallback value if map, key or previous item does not exist.
 
 ### Basic usage
