@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rowild/sass-map-get-next-prev.git"
+    "url": "git+https://github.com/elcheio/sass-map-get-next-prev.git"
   },
   "keywords": [
     "Sass",
@@ -18,9 +18,9 @@
     "prev"
   ],
   "author": "elche",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rowild/sass-map-get-next-prev/issues"
+    "url": "https://github.com/elcheio/sass-map-get-next-prev/issues"
   },
-  "homepage": "https://github.com/rowild/sass-map-get-next-prev#readme"
+  "homepage": "https://github.com/elcheio/sass-map-get-next-prev#readme"
 }
