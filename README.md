@@ -1,14 +1,19 @@
-# Sass map-get functions
+# Original script
+https://github.com/elcheio/sass-map-get-next-prev
+This repo is a fork of the original source. It only adds the basic requirements that are necessary to enable installation npm. 
+
+## Sass map-get functions
 
 Enhancement functions map-get-next and map-get-prev.
 For example when Sass map is used with a `@each` loop.
 
 ## Installation with npm
 
-For usage in node simply use:
-```js
-npm install -s https://github.com/elcheio/sass-map-get-next-prev
+For usage in node simply add
+```json
+"sass-map-get-next-prev": "git+https://github.com/rowild/sass-map-get-next-prev.git",
 ```
+to your package.json, then run `npm install`.
 
 ## Tutorial on how to use these functions
 - [Sass map-get functions](#sass-map-get-functions)
