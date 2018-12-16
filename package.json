@@ -1,6 +1,6 @@
 {
   "name": "sass-map-get-next-prev",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Sass map-get functions improving loops with get-next and get-prev for a potential 2nd loop parameter",
   "main": "map-get-functions.scss",
   "scripts": {
@@ -17,7 +17,7 @@
     "next",
     "prev"
   ],
-  "author": "elche",
+  "author": "Simon Koch <simon@elche.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/elcheio/sass-map-get-next-prev/issues"
