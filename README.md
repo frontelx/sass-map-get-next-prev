@@ -1,22 +1,38 @@
-# Sass map-get functions
+# Original script
+https://github.com/elcheio/sass-map-get-next-prev
+This repo is a fork of the original source. It only adds the basic requirements that are necessary to enable installation npm. 
 
-Enhancement functions map-get-next and map-get-prev.  
+## Sass map-get functions
+
+Enhancement functions map-get-next and map-get-prev.
 For example when Sass map is used with a `@each` loop.
 
-* [map-get-next](#map-get-next)
-  + [Basic usage](#basic-usage)
-    - [CSS output](#css-output)
-  + [Practical usage](#practical-usage)
-    - [CSS output](#css-output-1)
-  + [Parameters](#parameters)
-* [map-get-prev](#map-get-prev)
-  + [Basic usage](#basic-usage-1)
-    - [CSS output](#css-output-2)
-  + [Parameters](#parameters-1)
+## Installation with npm
+
+For usage in node simply add
+```json
+"sass-map-get-next-prev": "git+https://github.com/rowild/sass-map-get-next-prev.git",
+```
+to your package.json, then run `npm install`.
+
+## Tutorial on how to use these functions
+- [Sass map-get functions](#sass-map-get-functions)
+  - [Installation with npm](#installation-with-npm)
+  - [Tutorial on how to use these functions](#tutorial-on-how-to-use-these-functions)
+  - [map-get-next](#map-get-next)
+    - [Basic usage](#basic-usage)
+      - [CSS output](#css-output)
+    - [Practical usage](#practical-usage)
+      - [CSS output](#css-output-1)
+    - [Parameters](#parameters)
+  - [map-get-prev](#map-get-prev)
+    - [Basic usage](#basic-usage-1)
+      - [CSS output](#css-output-2)
+    - [Parameters](#parameters-1)
 
 ## map-get-next
 
-Function to get next map item.  
+Function to get next map item.
 Returns next map item or fallback value if map, key or next item does not exist.
 
 ### Basic usage
@@ -88,7 +104,7 @@ $map: (
 
 Equivalent to map-get-next
 
-Function to get previous map item.  
+Function to get previous map item.
 Returns previous map item or fallback value if map, key or previous item does not exist.
 
 ### Basic usage
